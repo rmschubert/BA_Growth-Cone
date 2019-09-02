@@ -16,12 +16,12 @@ df <- data.frame(Annotatoren, Präzision, Recall, JI)
 
 b <- group_by(df, Annotatoren) %>%
   summarise(count = n(),
-            Präzision = mean(Präzision2, na.rm = T),
-            Recall = mean(Recall2, na.rm = T),
-            JI = mean(JI1, na.rm = T),
-            sd_prec = sd(Präzision2, na.rm = T),
-            sd_rec = sd(Recall2, na.rm = T),
-            sd_JI = sd(JI1, na.rm = T)
+            Präzision = mean(Präzision, na.rm = T),
+            Recall = mean(Recall, na.rm = T),
+            JI = mean(JI, na.rm = T),
+            sd_prec = sd(Präzision, na.rm = T),
+            sd_rec = sd(Recall, na.rm = T),
+            sd_JI = sd(JI, na.rm = T)
   )
 
 print(xtable(b, type = "latex"),
