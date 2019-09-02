@@ -1,9 +1,9 @@
-### Hello and welcome to the repository of my bachelor-thesis
+## Hello and welcome to the repository of my bachelor-thesis
 
 The thesis is about segmenting neuronal growth-cones in phase-contrast time-lapse recordings.
 In this repository you'll find the Python- and R-code, which I used to process and evaluate my data.
 
-##What's going on
+### What's going on
 To segment neuronal growth-cones one can use classic methods (such as Thresholding) or you can follow the trend
 of using artificial intelligence i.e. neural networks. I tested some classic methods including the power-law
 transformation and the logarithmic transformation.
